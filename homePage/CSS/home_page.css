@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Allerta', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out;
 }
 :root{
     --rosaForte: #EB4764;
@@ -13,37 +16,57 @@
     --rosaFundo: #FFEAED;
     --roxo: #560F47;
 }
-
 body{
+    background: url(IMG/banner_pink.svg) no-repeat;
+    background-color: var(--rosaFundo);
     height: 2000px;
+}
+#preloader{
+    background: var(--rosaForte) url(IMG/loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 /*HEADER HOME*/
-#header_home{
-    height: 6rem;
+header{
     width: 100%;
     display: flex;
     align-items: center;
     background-color: var(--rosaMedio);
+    position: fixed;
 }
+
+.header_home{
+    height: 100px;
+}
+.header_scrolled{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    height: 80px;
+}
+
 #menu{
     gap: 3rem;
     width: 100%;
     display: flex;
-    color: #fff;
     font-size: 20px;
     list-style: none;
     margin-right: 13rem;
     align-items: center;
     justify-content: flex-end;
 }
+.cor_nav{
+    color: #fff;
+}
 #perfil{
-    width: 65px;
+    width: 60px;
     height: 60px;
-    border-radius: 2rem;
+    border-radius: 100%;
     background-color: #fff;
 }
 #logo_pink{
-    position: absolute;
     margin-left: 17rem;
+    width: 300px;
 }
