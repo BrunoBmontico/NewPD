@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-let loader = document.getElementById('preloader');
+const loader = document.getElementById('preloader');
 
 /*load do site*/
 window.addEventListener('load', function(){
