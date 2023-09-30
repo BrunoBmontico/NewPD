@@ -13,7 +13,7 @@
 }
 
 :root {
-    --rosaForte: #EB4764;
+    --rosaForte: #EE4664;
     --rosaEscuro: #F86A83;
     --rosaMedio: #FF7B92;
     --rosaClaro: #FFC0CB;
@@ -86,7 +86,7 @@ header {
 }
 
 #logo_pink {
-    margin-left: 17rem;
+    margin-left: 13rem;
     width: 300px;
 }
 
@@ -152,4 +152,48 @@ header {
 .title-btn {
     color: var(--roxo);
     font-size: 20px;
+}
+
+/*APRESENTAÇÃO*/
+#apresentacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+#title-ap{
+    width: 860px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--rosaForte);
+}
+/*descrições*/
+#descs{
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+}
+
+.desc{
+    width: 340px;
+    height: 300px;
+    border: 3px solid var(--rosaClaro);
+    background-color: #fff;
+    box-shadow: -13px 13px 0px 0px var(--rosaForte);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-desc{
+    list-style: square;
+    color: var(--roxo);
+    font-size: 30px;
+    margin: 10px 20px;
+    
+}
+
+.text-desc{
+    display: flex;
 }
