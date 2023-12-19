@@ -1,5 +1,7 @@
 const header = document.querySelector('header');
 const loader = document.getElementById('preloader');
+const login = document.getElementById('open-login')
+const modal = document.getElementById('login-modal');
 
 /*load do site*/
 window.addEventListener('load', function(){
@@ -21,4 +23,16 @@ window.addEventListener('scroll', function(){
         document.getElementById('perfil').style.width = '60px'
         document.getElementById('perfil').style.height = '60px'
     }
+});
+
+/*modal login*/
+login.addEventListener('click', function(){
+    if (modal.classList.contains('closed-modal')){
+        modal.classList.remove('closed-modal');
+        modal.classList.add('open-modal');
+    }else if (modal.classList.contains('open-modal')){
+        modal.classList.remove('open-modal');
+        modal.classList.add('closed-modal');
+    }
+
 });

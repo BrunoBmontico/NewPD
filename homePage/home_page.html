@@ -20,10 +20,22 @@
             <li><a href="#" class="cor_nav">Inicio</a></li>
             <li><a href="#" class="cor_nav">Agendamento</a></li>
             <li><a href="#" class="cor_nav">Cadastro</a></li>
-            <li><a href="#" class="cor_nav">Login</a></li>
+            <li><a href="#open-login" class="cor_nav" id="open-login">Login</a></li>
             <a href="#" id="perfil"></a>
         </ul>
     </header>
+
+    <!--MODAL LOGIN-->
+    <div id="login-modal" class="closed-modal">
+        <p id="title-login">Login</p>
+        <input type="text" placeholder="E-mail" class="login-input">
+        <input type="text" placeholder="Senha" class="login-input">
+
+        <input type="checkbox" id="manter-conn">
+        <label for="manter-conn">Me manter conectado</label>
+
+        <button id="Entrar">Entrar</button>
+    </div>
 
     <!--MENU DE SERVIÇOS-->
     <section id="servs">
@@ -371,5 +383,4 @@
     </footer>
 
 </body>
-
 </html>
