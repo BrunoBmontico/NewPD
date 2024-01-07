@@ -34,5 +34,4 @@ login.addEventListener('click', function(){
         modal.classList.remove('open-modal');
         modal.classList.add('closed-modal');
     }
-
 });

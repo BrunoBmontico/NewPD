@@ -9,7 +9,11 @@
     font-family: 'Allerta', sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+body {
+    background-color: var(--rosaFundo);
 }
 
 :root {
@@ -30,6 +34,21 @@ body {
     position: absolute;
     z-index: -999;
     width: 100%;
+}
+
+/*SCROLL BAR*/
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--rosaMedio);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--rosaClaro);
+    border-radius: 30px;
+    border: 3px solid var(--rosaMedio);
 }
 
 /*loader do site*/
@@ -129,7 +148,7 @@ header {
     height: 200px;
     border-radius: 25px 25px 25px 0px;
     border: 3px solid var(--rosaMedio);
-    background: url(IMG/wave.svg) no-repeat bottom;
+    background: url(IMG/homepage_img/wave.svg) no-repeat bottom;
     display: flex;
     justify-content: center;
 }
@@ -475,7 +494,6 @@ header {
 }
 
 /*CONTATO*/
-
 #contato {
     color: var(--roxo);
     display: flex;
@@ -491,7 +509,6 @@ header {
 }
 
 /*LOGIN MODAL*/
-
 #login-modal{
     top: 120px;
     left: 90rem;
@@ -502,14 +519,12 @@ header {
     background-color: var(--branco);
     border: 3px solid var(--rosaClaro);
     border-radius: 0px 20px 20px 20px ;
-    box-shadow: -13px 13px 0px 0px var(--rosaForte);
-
+    box-shadow: -7px 7px 0px 0px var(--rosaForte);
     animation: modal .3s;
 }
 
 .open-modal{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -528,5 +543,49 @@ header {
     }
 }
 
+#title-login{
+    font-size: 30px;
+    color: var(--roxo);
+    margin: 50px;
+}
 
+.login-input{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #a1a1a1;
+    padding: 5px;
+    margin: 20px;
+}
+#label-manter-conn{
+    color: var(--roxo);
+    font-size: 15px;
+}
 
+#Entrar{
+    color: var(--branco);
+    background-color: var(--rosaMedio);
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#Entrar:hover{
+    box-shadow: -4px 4px 0px 0px var(--rosaForte);
+    transition: all .2s ease-in-out;
+}
+
+.links-login{
+    color: var(--roxo);
+    margin: 3px;
+    font-size: 13px;
+}
+
+.links-login:hover{
+    text-decoration: underline;
+}
