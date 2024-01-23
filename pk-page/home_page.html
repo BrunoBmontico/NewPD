@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/home_page.css">
+    <script src="JS/home_page.js" defer></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <img src="CSS/IMG/homepage_img/banner_pink.svg" id="banner_pink">
+
+    <!--HEADER PRINCIPAL DA PAGINA-->
+    <header class="header_home">
+        <img src="CSS/IMG/header_img/logo-header.svg" alt="logo_PinkDiamond" id="logo_pink">
+        <ul id="menu">
+            <li><a href="#" class="cor_nav">Inicio</a></li>
+            <li><a href="#" class="cor_nav">Agendamento</a></li>
+            <li><a href="cadastro.html" class="cor_nav">Cadastro</a></li>
+            <li><a href="#open-login" class="cor_nav" id="open-login">Login</a></li>
+            <a href="perfil_usuario.html" id="perfil"></a>
+        </ul>
+    </header>
+
+    <!--MODAL LOGIN-->
+    <div id="login-modal" class="closed-modal">
+        <p id="title-login">Login</p>
+        <input type="text" placeholder="E-mail" class="login-input">
+        <input type="text" placeholder="Senha" class="login-input">
+        <div>
+            <input type="checkbox" id="manter-conn">
+            <label for="manter-conn" id="label-manter-conn">Me manter conectado</label>
+        </div>
+        <button id="Entrar">Entrar</button>
+        <a href="#" class="links-login">Esqueci minha Senha.</a>
+        <a href="cadastro.html" class="links-login">Não tem uma conta? Se cadastre aqui.</a>
+    </div>
+
+    <!--MENU DE SERVIÇOS-->
+    <section id="servs">
+        <div class="menu-serv">
+            <li id="title-serv">Nossos Serviços</li>
+            <nav id="btns-serv">
+                <div class="serv">
+                    <img src="CSS/IMG/homepage_img/spa.svg" class="img-serv">
+                    <a href="#spa" class="anchor">
+                        <p class="title-btn">SPA</p>
+                    </a>
+                </div>
+
+                <div class="serv">
+                    <img src="CSS/IMG/homepage_img/espaço_beleza.svg" class="img-serv">
+                    <a href="#espaco-beleza" class="anchor">
+                        <p class="title-btn">Espaço de Beleza</p>
+                    </a>
+                </div>
+
+                <div class="serv">
+                    <img src="CSS/IMG/homepage_img/dermatologia.svg" class="img-serv">
+                    <a href="#derma" class="anchor">
+                        <p class="title-btn">Dermatologia</p>
+                    </a>
+                </div>
+
+                <div class="serv">
+                    <img src="CSS/IMG/homepage_img/estética.svg" class="img-serv">
+                    <a href="#estetica" class="anchor">
+                        <p class="title-btn">Estética</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--APRESENTAÇÃO-->
+    <section id="apresentacao">
+        <p id="title-ap">
+            Somos a mais moderna clínica dermatológica que está revolucionando
+            a forma de cuidar da sua aparência.
+        </p>
+
+        <div id="descs">
+            <div class="desc">
+                <P class="title-desc">Nossa Unidade</P>
+                <p class="text-desc">
+                    Do diagnostico ao tratamento você resolve tudo em um só lugar.
+                    Sempre de forma eficiente e acolhedora.
+                </p>
+            </div>
+            <div class="desc">
+                <p class="title-desc">Nossa Equipe</p>
+                <p class="text-desc">
+                    Tem experiência em grandes hospitais e é sempre avaliada pelo nosso
+                    programa de aperfeiçoamento.
+                </p>
+            </div>
+            <div class="desc">
+                <p class="title-desc">Equipamentos</p>
+                <p class="text-desc">
+                    Nossos equipamentos são modernos, garantindo resultado rapido e preciso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--BARRA HORIZONTAL-->
+    <div id="bars">
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+    </div>
+
+    <!--SERVIÇOS-->
+    <section id="spa">
+        <div class="menu-serv content">
+            <img src="CSS/IMG/homepage_img/spa.svg" id="img-content">
+            <p id="title-content">SPA</p>
+            <nav class="btns-content">
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Detox</p>
+                        <p>Massagem Relaxante</p>
+                        <p>Hidratação Facial</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="price">R$448</p>
+                            <p id="hour">2:30 Horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Ofurô de Sais</p>
+                        <p>Massagem Relaxante</p>
+                        <p>Spa dos pés</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="price">R$408</p>
+                            <p id="hour">2:00 Horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Esfoliação</p>
+                        <p>Drenagem Linfática</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="price">R$715</p>
+                            <p id="hour">3:00 Horas</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--MODAL SPA-->
+    <div></div>
+
+    <section id="espaco-beleza">
+        <div class="menu-serv content">
+            <img src="CSS/IMG/homepage_img/espaço_beleza.svg" id="img-content">
+            <p id="title-content">Espaço de Beleza</p>
+            <nav class="btns-content">
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Couro Cabeludo</p>
+                        <p>Hidratação Capilar</p>
+                        <p>Cortes Modernos</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Cabeleireiro</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Moldagem</p>
+                        <p>Cuidados Delicados</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Depilação</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Cuidado Impecável</p>
+                        <p>Hidratação Cuticular</p>
+                        <p>Estilos Atuais</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Manicure</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Pés Saudáveis</p>
+                        <p>Cuidado Profissional</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Podologia</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="derma">
+        <div class="menu-serv content">
+            <img src="CSS/IMG/homepage_img/dermatologia.svg" id="img-content">
+            <p id="title-content">Dermatologia</p>
+            <nav class="btns-content">
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Rejuvenecimento</p>
+                        <p>Regeneração Suave</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Dermapen</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Revitalização Facial</p>
+                        <p>Suavização de Textura</p>
+                        <p>Pele Radiante</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Lasers</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Estilos Atuais</p>
+                        <p>Renovação Dermica</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Peeling Químico</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Cuidado Profissional</p>
+                        <p>Regeneração Delicada</p>
+                        <p>Hidratação</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Preenchimento</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="estetica">
+        <div class="menu-serv content">
+            <img src="CSS/IMG/homepage_img/estética.svg" id="img-content">
+            <p id="title-content">Estética</p>
+            <nav class="btns-content">
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Limpeza de Pele</p>
+                        <p>Microangulamento</p>
+                        <p>Drenagem Facial</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Corporal</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn">
+                    <div id="serv-list">
+                        <p>Flacidez Corporal</p>
+                        <p>Celulite</p>
+                        <p>Gordura Localizada</p>
+                    </div>
+                    <div id="display-bottom">
+                        <div id="line">
+                            <p id="serv-title">Facial</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--BARRAS LATERAIS-->
+    <div id="conteiner-bars">
+
+        <div id="side-bar1">
+            <div class="sbar1"></div>
+            <div class="sbar2"></div>
+            <div class="sbar-small1"></div>
+            <div class="sbar-small2"></div>
+        </div>
+
+        <div id="side-bar2">
+            <div class="sbar1"></div>
+            <div class="sbar2"></div>
+        </div>
+
+        <div id="side-bar3">
+            <div class="sbar1"></div>
+            <div class="sbar2"></div>
+            <div class="sbar-small1"></div>
+            <div class="sbar-small2"></div>
+        </div>
+
+        <div id="side-bar4">
+            <div class="sbar-small3"></div>
+            <div class="sbar-small4"></div>
+            <div class="sbar1"></div>
+            <div class="sbar2"></div>
+        </div>
+
+        <div id="side-bar5">
+            <div class="sbar-small1"></div>
+            <div class="sbar-small2"></div>
+            <div class="sbar-small1"></div>
+            <div class="sbar-small2"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-home">
+        <img src="CSS/IMG/footer_img/banner_footer.svg" id="banner-footer">
+
+        <div id="footer">
+            <div id="sobre-nos">
+                <img src="CSS/IMG/footer_img/logo-footer.svg" id="logo-footer">
+                <p id="sb-text">
+                    Sobre nós:
+                    <br>
+                    <br>
+                    A Pink Diamond Skin Care foi criada para oferecer um ambiente
+                    descontraído e desconexo da agitação da metrópole,
+                    onde você pode relaxar e cuidar da sua pele e bem-estar.
+                </p>
+            </div>
+            <div id="nossas-redes">
+                <p>Nossas Redes:</p>
+                <div id="redes">
+                    <a href="https://www.instagram.com"><img src="CSS/IMG/footer_img/instagram.svg"></a>
+                    <a href="https://twitter.com"><img src="CSS/IMG/footer_img/twitter.svg"></a>
+                    <a href="https://www.facebook.com"><img src="CSS/IMG/footer_img/facebook.svg"></a>
+                </div>
+            </div>
+            <div id="contato">
+                <ul id="contato-lista">
+                    <p>Contato:</p>
+                    <li>Rua Coelho Lisboa, 538 - Tatuapé, São paulo - Sp</li>
+                    <li>Telefone: 11 2256-4040</li>
+                    <li>E-mail: atendimento@pinkdiamond.com.br</li>
+                    <li>Horário de funcionamento:</li>
+                    <li>Segunda à Sexta das 08:00 às 20:00</li>
+                    <li>Sábados das 08:00 às 18:00 </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

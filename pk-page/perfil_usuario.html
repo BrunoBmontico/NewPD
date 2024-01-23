@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/perfil_usuario.css">
+    <script src="JS/perfil_usuario.js" defer></script>
+    <title>perfil_usuario</title>
+</head>
+<body>
+    <!--HEADER PRINCIPAL DA PAGINA-->
+    <header class="header_home">
+        <img src="CSS/IMG/header_img/logo-header.svg" alt="logo_PinkDiamond" id="logo_pink">
+        <ul id="menu">
+            <li><a href="home_page.html" class="cor_nav">Inicio</a></li>
+            <li><a href="#" class="cor_nav">Agendamento</a></li>
+            <li><a href="cadastro.html" class="cor_nav">Cadastro</a></li>
+            <li><a href="#open-login" class="cor_nav" id="open-login">Login</a></li>
+            <a href="perfil_usuario.html" id="perfil"></a>
+        </ul>
+    </header>
+
+    <!--MODAL LOGIN-->
+    <div id="login-modal" class="closed-modal">
+        <p id="title-login">Login</p>
+        <input type="text" placeholder="E-mail" class="login-input">
+        <input type="text" placeholder="Senha" class="login-input">
+        <div>
+            <input type="checkbox" id="manter-conn">
+            <label for="manter-conn" id="label-manter-conn">Me manter conectado</label>
+        </div>
+        <button id="Entrar">Entrar</button>
+        <a href="#" class="links-login">Esqueci minha Senha.</a>
+        <a href="cadastro.html" class="links-login">Não tem uma conta? Se cadastre aqui.</a>
+    </div>
+
+    <!-- PERFIL DO USUARIO -->
+
+    <div id="conteiner-banner"></div>
+    <div id="user-img">
+        <div id="greetings-user"></div>
+    </div>
+    <div id="user-info">
+        <label for="user-name"></label>
+        <input type="text" id="user-name">
+
+        <label for="date-birth"></label>
+        <input type="date" id="user-birth">
+
+        <label for="user-cpf"></label>
+        <input type="number" id="user-cpf">
+
+        <label for="user-rg"></label>
+        <input type="number" id="user-rg">
+
+        <label for="user-tel"></label>
+        <input type="number" id="user-tel">
+
+        <label for="user-address"></label>
+        <input type="text" id="user-address">
+
+        <label for="user-sex"></label>
+        <select name="Sex">
+            <option id="title-select">Sexo</option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+        </select>
+
+        <label for="user-email"></label>
+        <input type="email" id="user-email">
+
+        <label for="user-H-insurance"></label>
+        <select name="Convênio">
+            <option value="1"></option>
+        </select>
+
+    </div>
+</body>
+</html>
