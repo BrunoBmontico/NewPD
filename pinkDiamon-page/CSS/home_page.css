@@ -1,0 +1,592 @@
+/*IMPORT DA FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+/*definições gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Allerta', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out;
+}
+
+body {
+    background-color: var(--rosaFundo);
+}
+
+:root {
+    --rosaForte: #EE4664;
+    --rosaEscuro: #F86A83;
+    --rosaMedio: #FF7B92;
+    --rosaClaro: #FFC0CB;
+    --rosaFundo: #FFEAED;
+    --roxo: #560F47;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--rosaFundo);
+}
+
+#banner_pink {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+}
+
+/*SCROLL BAR*/
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--rosaMedio);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--rosaClaro);
+    border-radius: 30px;
+    border: 3px solid var(--rosaMedio);
+}
+
+/*loader do site*/
+#preloader {
+    background: var(--rosaForte) url(IMG/loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+/*HEADER HOME*/
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--rosaMedio);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_home {
+    height: 100px;
+}
+
+.header_scrolled {
+    background-color: #ff7b91c5;
+    height: 70px;
+}
+
+#menu {
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin-right: 13rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cor_nav {
+    color: var(--branco);
+    font-size: 20px;
+    display: flex;
+}
+
+.cor_nav:hover {
+    box-shadow: 0px 2px 0px 0px var(--branco);
+}
+
+
+#perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--branco);
+}
+
+#logo_pink {
+    margin-left: 13rem;
+    width: 250px;
+}
+
+/*MENU DE SERVIÇOS*/
+#servs {
+    display: flex;
+    justify-content: center;
+    padding-top: 600px;
+}
+
+.menu-serv {
+    height: 400px;
+    width: 1400px;
+    border: 3px solid var(--rosaClaro);
+    background-color: var(--branco);
+    box-shadow: -13px 13px 0px 0px var(--rosaForte);
+}
+
+/*TITULO SERVIÇOS*/
+#title-serv {
+    list-style: square;
+    color: var(--roxo);
+    font-size: 40px;
+    margin: 10px 40px;
+}
+
+/*SERVIÇOS BTN*/
+#btns-serv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.serv {
+    width: 230px;
+    height: 200px;
+    border-radius: 25px 25px 25px 0px;
+    border: 3px solid var(--rosaMedio);
+    background: url(IMG/homepage_img/wave.svg) no-repeat bottom;
+    display: flex;
+    justify-content: center;
+}
+
+.serv:hover {
+    box-shadow: -7px 7px 0px 0px var(--rosaForte);
+}
+
+.img-serv {
+    position: absolute;
+    margin-top: 8px;
+}
+
+.anchor {
+    width: 220px;
+    height: 190px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.title-btn {
+    color: var(--branco);
+    font-size: 20px;
+}
+
+/*APRESENTAÇÃO*/
+#apresentacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#title-ap {
+    width: 860px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--rosaForte);
+}
+
+/*DESCRIÇÕES*/
+#descs {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+}
+
+.desc {
+    width: 340px;
+    height: 300px;
+    border: 3px solid var(--rosaClaro);
+    background-color: var(--branco);
+    box-shadow: -13px 13px 0px 0px var(--rosaForte);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-desc {
+    list-style: square;
+    color: var(--roxo);
+    font-size: 35px;
+    margin: 10px;
+
+}
+
+.text-desc {
+    margin-top: 15px;
+    width: 270px;
+    font-size: 24px;
+    color: var(--rosaMedio);
+}
+
+.text-desc,
+.title-desc,
+#title-ap,
+#title-serv {
+    cursor: default;
+}
+
+/*BARRA FUNDO*/
+#bar1 {
+    margin-top: 130px;
+    background-color: var(--rosaEscuro);
+    width: 100%;
+    height: 200px;
+}
+
+#bar2 {
+    background-color: var(--rosaMedio);
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 90px 0px 0px var(--rosaClaro);
+}
+
+/*BARRAS LATERAIS*/
+#side-bar1,
+#side-bar2,
+#side-bar3,
+#side-bar4,
+#side-bar5 {
+    position: absolute;
+}
+
+#side-bar1 {
+    top: 160rem;
+    left: 6.5rem;
+}
+
+#side-bar2 {
+    top: 200rem;
+    right: 6.5rem;
+}
+
+#side-bar3 {
+    top: 250rem;
+    left: 6.5rem;
+}
+
+#side-bar4 {
+    top: 270rem;
+    right: 6.5rem;
+}
+
+#side-bar5 {
+    top: 350rem;
+    left: 6.5rem;
+}
+
+.sbar1 {
+    background-color: var(--rosaEscuro);
+    width: 25px;
+    height: 510px;
+}
+
+.sbar2 {
+    background-color: var(--rosaMedio);
+    width: 25px;
+    height: 150px;
+    box-shadow: 0px 100px 0px 0px var(--rosaClaro);
+}
+
+.sbar-small1 {
+    background-color: var(--rosaEscuro);
+    margin-top: 8rem;
+    width: 25px;
+    height: 60px;
+}
+
+.sbar-small3 {
+    background-color: var(--rosaEscuro);
+    width: 25px;
+    height: 60px;
+}
+
+.sbar-small2,
+.sbar-small4 {
+    background-color: var(--rosaMedio);
+    margin-bottom: 8rem;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 25px 0px 0px var(--rosaClaro);
+}
+
+/*ANCHOR*/
+#spa,
+#espaco-beleza,
+#derma,
+#estetica {
+    display: flex;
+    justify-content: center;
+    height: 60rem;
+    align-items: center;
+}
+
+#spa {
+    margin-top: 70px;
+}
+
+/*CONTEUDO SERVIÇOS*/
+.content {
+    height: 670px;
+}
+
+#img-content {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+}
+
+#title-content {
+    position: absolute;
+    color: var(--roxo);
+    font-size: 40px;
+    margin: 30px 120px;
+}
+
+.btns-content {
+    display: flex;
+    justify-content: center;
+    margin: 140px 0;
+    gap: 50px;
+
+}
+
+#btn {
+    border: 3px solid var(--rosaMedio);
+    border-radius: 25px 25px 25px 0px;
+    width: 270px;
+    height: 390px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: -7px 7px 0px 0px var(--rosaForte);
+}
+
+#display-bottom {
+
+    background-color: var(--rosaMedio);
+    border-radius: 0px 0px 25px 0px;
+    height: 180px;
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.line {
+    background-color: var(--branco);
+    width: 230px;
+    height: 3px;
+}
+
+#line {
+    width: 230px;
+    height: 110px;
+    border-bottom: 3px solid var(--branco);
+    border-top: 3px solid var(--branco);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name-serv {
+    color: var(--branco);
+    font-size: 30px;
+}
+
+#hour,
+#serv-title {
+    color: var(--branco);
+    font-size: 28px;
+}
+
+#serv-list {
+    color: #560F47;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 30px;
+    gap: 10px;
+    font-size: 15px;
+    
+}
+
+/*FOOTER*/
+#footer-home {
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#banner-footer {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    top: 350rem;
+}
+
+#footer {
+    position: absolute;
+    background-color: var(--rosaMedio);
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-nos,
+#nossas-redes,
+#contato {
+    width: 100%;
+    height: 100%;
+}
+
+/*SOBRE NOS*/
+#sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo-footer {
+    width: 150px;
+}
+
+#sb-text {
+    width: 350px;
+    color: var(--roxo);
+}
+
+/*NOSSAS REDES*/
+#nossas-redes {
+    color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#redes {
+    display: flex;
+    gap: 15px;
+}
+
+/*CONTATO*/
+#contato {
+    color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato-lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+}
+
+/*LOGIN MODAL*/
+#login-modal{
+    top: 120px;
+    left: 90rem;
+    z-index: 1;
+    width: 340px;
+    height: 670px;
+    position: fixed;
+    background-color: var(--branco);
+    border: 3px solid var(--rosaClaro);
+    border-radius: 0px 20px 20px 20px ;
+    box-shadow: -7px 7px 0px 0px var(--rosaForte);
+    animation: modal .3s;
+}
+
+.open-modal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.closed-modal{
+    display: none;
+}
+
+@keyframes modal {
+    from {
+        opacity:0;
+        transform:  translate3d(0, -80px, 0);
+    }to {
+        opacity:1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+#title-login{
+    font-size: 30px;
+    color: var(--roxo);
+    margin: 50px;
+}
+
+.login-input{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #a1a1a1;
+    padding: 5px;
+    margin: 20px;
+}
+#label-manter-conn{
+    color: var(--roxo);
+    font-size: 15px;
+}
+
+#Entrar{
+    color: var(--branco);
+    background-color: var(--rosaMedio);
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#Entrar:hover{
+    box-shadow: -4px 4px 0px 0px var(--rosaForte);
+    transition: all .2s ease-in-out;
+}
+
+.links-login{
+    color: var(--roxo);
+    margin: 3px;
+    font-size: 13px;
+}
+
+.links-login:hover{
+    text-decoration: underline;
+}
