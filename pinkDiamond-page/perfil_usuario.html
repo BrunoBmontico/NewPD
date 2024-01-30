@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/perfil_usuario.css">
+    <script src="JS/perfil_usuario.js" defer></script>
+    <title>perfil_usuario</title>
+</head>
+<body>
+    <!--HEADER PRINCIPAL DA PAGINA-->
+    <header class="header_home">
+        <img src="CSS/IMG/header_img/logo-header.svg" alt="logo_PinkDiamond" id="logo_pink">
+        <ul id="menu">
+            <li><a href="home_page.html" class="cor_nav">Inicio</a></li>
+            <li><a href="agendamento.html" class="cor_nav">Agendamento</a></li>
+            <li><a href="cadastro.html" class="cor_nav">Cadastro</a></li>
+            <li><a href="#open-login" class="cor_nav" id="open-login">Login</a></li>
+            <a href="#" id="perfil"></a>
+        </ul>
+    </header>
+
+    <!--MODAL LOGIN-->
+    <div id="login-modal" class="closed-modal">
+        <p id="title-login">Login</p>
+        <input type="text" placeholder="E-mail" class="login-input">
+        <input type="text" placeholder="Senha" class="login-input">
+        <div>
+            <input type="checkbox" id="manter-conn">
+            <label for="manter-conn" id="label-manter-conn">Me manter conectado</label>
+        </div>
+        <button id="Entrar">Entrar</button>
+        <a href="#" class="links-login">Esqueci minha Senha.</a>
+        <a href="cadastro.html" class="links-login">Não tem uma conta? Se cadastre aqui.</a>
+    </div>
+
+    <!-- PERFIL DO USUARIO -->
+    <div id="container-banner"></div>
+
+    <div id="container-user-img">
+        <div id="user-img">
+            <div id="circle-img"></div>
+        </div>
+        <div id="greetings-user">Olá, Paciente</div>
+    </div>
+    <div id="container-info">
+        <div id="user-info">
+            <div id="container-edit">
+                <button id="edit"><img src="CSS/IMG/usuario_img/pencil.svg" id="img-edit"></button>
+            </div>
+
+            <div id="block" class="block-inputs"></div>
+
+            <div id="inputs">
+                <label for="user-name" class="label-info">Nome:</label>
+                <input type="text" id="user-name" class="input-info-user">
+        
+                <label for="date-birth" class="label-info">Data de Nascimento:</label>
+                <input type="date" id="user-birth" class="input-info-user">
+        
+                <label for="user-cpf" class="label-info">CPF:</label>
+                <input type="number" id="user-cpf" class="input-info-user">
+        
+                <label for="user-rg" class="label-info">RG:</label>
+                <input type="number" id="user-rg" class="input-info-user">
+        
+                <label for="user-tel" class="label-info">Telefone:</label>
+                <input type="number" id="user-tel" class="input-info-user">
+        
+                <label for="user-address" class="label-info">Endereço:</label>
+                <input type="text" id="user-address" class="input-info-user">
+        
+                <label for="user-sex" class="label-info">Sexo:</label>
+                <select name="Sex" class="input-info-user">
+                    <option value="0"></option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </select>
+        
+                <label for="user-email" class="label-info">E-mail:</label>
+                <input type="email" id="user-email" class="input-info-user">
+    
+                <label for="user-password" class="label-info">Senha:</label>
+                <input type="password" id="user-password" class="input-info-user">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="footer-usuario">
+        <img src="CSS/IMG/cadastro_img/banner_footer.svg" id="banner-footer">
+        <div id="footer">
+            <div id="sobre-nos">
+                <img src="CSS/IMG/footer_img/logo-footer.svg" id="logo-footer">
+                <p id="sb-text">
+                    Sobre nós:
+                    <br>
+                    <br>
+                    A Pink Diamond Skin Care foi criada para oferecer um ambiente
+                    descontraído e desconexo da agitação da metrópole,
+                    onde você pode relaxar e cuidar da sua pele e bem-estar.
+                </p>
+            </div>
+            <div id="nossas-redes">
+                <p>Nossas Redes:</p>
+                <div id="redes">
+                    <a href="https://www.instagram.com"><img src="CSS/IMG/footer_img/instagram.svg"></a>
+                    <a href="https://twitter.com"><img src="CSS/IMG/footer_img/twitter.svg"></a>
+                    <a href="https://www.facebook.com"><img src="CSS/IMG/footer_img/facebook.svg"></a>
+                </div>
+            </div>
+            <div id="contato">
+                <ul id="contato-lista">
+                    <p>Contato:</p>
+                    <li>Rua Coelho Lisboa, 538 - Tatuapé, São paulo - Sp</li>
+                    <li>Telefone: 11 2256-4040</li>
+                    <li>E-mail: atendimento@pinkdiamond.com.br</li>
+                    <li>Horário de funcionamento:</li>
+                    <li>Segunda à Sexta das 08:00 às 20:00</li>
+                    <li>Sábados das 08:00 às 18:00 </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
