@@ -1,7 +1,8 @@
 const login = document.getElementById('open-login');
 const modal = document.getElementById('login-modal');
 const loader = document.getElementById('preloader');
-const btnsProcedimento = document.querySelectorAll('.btn-procedimento')
+const btnsProcedimento = document.querySelectorAll('.btn-procedimento');
+
 
 /*load do site*/
 window.addEventListener('load', function(){
@@ -25,17 +26,3 @@ Array.prototype.forEach.call(btnsProcedimento, function(btn){
         btn.classList.toggle('btn-procedimento-clicado');
     });
 });
-
-function search(){
-    let searchBar = document.getElementById('search').value;
-    let procedimentos = document.getElementsByClassName('name-serv');
-    searchBar = searchBar.toLowerCase()
-
-    for (i = 0; i < procedimentos.length; i++){
-        if (!procedimentos[i].innerHTML.toLowerCase().includes(searchBar)){
-            btnsProcedimento[i].style.display = 'none'
-        } else if (procedimentos[i].innerHTML.toLowerCase().includes(searchBar)){
-            btnsProcedimento[i].style.display = 'flex'
-        }
-    }
-}

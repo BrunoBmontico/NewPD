@@ -23,25 +23,24 @@
     </header>
 
     <!--MODAL LOGIN-->
-    <div id="login-modal" class="closed-modal">
-        <p id="title-login">Login</p>
-        <input type="text" placeholder="E-mail" class="login-input">
-        <input type="text" placeholder="Senha" class="login-input">
-        <div>
-            <input type="checkbox" id="manter-conn">
-            <label for="manter-conn" id="label-manter-conn">Me manter conectado</label>
+    <div id="container-modal">
+        <div id="login-modal" class="closed-modal">
+            <p id="title-login">Login</p>
+            <input type="text" placeholder="E-mail" class="login-input">
+            <input type="text" placeholder="Senha" class="login-input">
+            <div>
+                <input type="checkbox" id="manter-conn">
+                <label for="manter-conn" id="label-manter-conn">Me manter conectado</label>
+            </div>
+            <button id="Entrar">Entrar</button>
+            <a href="#" class="links-login">Esqueci minha Senha.</a>
+            <a href="cadastro.html" class="links-login">Não tem uma conta? Se cadastre aqui.</a>
         </div>
-        <button id="Entrar">Entrar</button>
-        <a href="#" class="links-login">Esqueci minha Senha.</a>
-        <a href="cadastro.html" class="links-login">Não tem uma conta? Se cadastre aqui.</a>
     </div>
 
-    <!-- AGENDAMENTO -->
+    <!-- AGENDAMENTO PROCEDIMENTOS -->
     <div id="agendamento-container">
         <div class="agendamento procedimento">
-            <div id="search-container">
-                <input type="text" placeholder="procedimento" id="search" onkeyup="search()">
-            </div>
             <div class="content">
                 <div class="content-line">
                     <nav class="btn-procedimento">
@@ -133,16 +132,101 @@
                         </div>
                     </nav>
                 </div>
-
-                
             </div>
         </div>
-        <div class="agendamento med-data">
+        
+        <div class="agendamento medico-data">
+            <div class="search-container med-search-container">
+                <input type="date" placeholder="Data" class="med-data">
+            </div>
+            <div class="content med">
+                <nav class="btn-medico">
+                    <div class="perfil-medico-container">
+                        <div class="img-medico">
+                            <img src="#">
+                        </div>
+                        <div class="container-espc">
+                            <img src="/CSS/IMG/agendamento_img/spa.svg" id="img-espc">
+                            <p id="desc-med-espc">SPA</p>
+                        </div>
+                    </div>
+                    <div class="horario-container">
+                        <div class="horario">
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="btn-medico">
+                    <div class="perfil-medico-container">
+                        <div class="img-medico">
+                            <img src="#">
+                        </div>
+                        <div class="container-espc">
+                            <img src="/CSS/IMG/agendamento_img/estética.svg" id="img-espc">
+                            <p id="desc-med-espc">Estética</p>
+                        </div>
+                    </div>
+                    <div class="horario-container">
+                        <div class="horario">
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+
+                            <div class="hora-container">
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                                <button class="hora">17:00</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
             
-        </div>
+
+        
+
+
+
     </div> 
-
-
+    
     <!-- FOOTER -->
     <footer id="footer-agendamento">
         <img src="CSS/IMG/cadastro_img/banner_footer.svg" id="banner-footer">
