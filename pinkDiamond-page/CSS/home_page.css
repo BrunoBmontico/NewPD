@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb{
 
 /*loader do site*/
 #preloader {
-    background: var(--rosaForte) url(IMG/loader.gif) no-repeat center center;
+    background: var(--rosaForte) url(IMG/homepage_img/loader.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -71,11 +71,10 @@ header {
 }
 
 .header_home {
-    height: 100px;
+    height: 120px;
 }
 
 .header_scrolled {
-    background-color: #ff7b91c5;
     height: 70px;
 }
 
@@ -215,7 +214,6 @@ header {
     color: var(--roxo);
     font-size: 35px;
     margin: 10px;
-
 }
 
 .text-desc {
@@ -355,7 +353,6 @@ header {
     justify-content: center;
     margin: 140px 0;
     gap: 50px;
-
 }
 
 #btn {
@@ -376,7 +373,6 @@ header {
 }
 
 #display-bottom {
-
     background-color: var(--rosaMedio);
     border-radius: 0px 0px 25px 0px;
     height: 180px;
@@ -440,13 +436,10 @@ header {
 
 #banner-footer {
     width: 100%;
-    position: absolute;
     z-index: -10;
-    top: 350rem;
 }
 
 #footer {
-    position: absolute;
     background-color: var(--rosaMedio);
     width: 100%;
     height: 270px;
@@ -510,9 +503,15 @@ header {
 }
 
 /*LOGIN MODAL*/
+#container-modal{
+    width: 100%;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+}
+
 #login-modal{
-    top: 120px;
-    left: 90rem;
     z-index: 1;
     width: 340px;
     height: 670px;
@@ -589,4 +588,204 @@ header {
 
 .links-login:hover{
     text-decoration: underline;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1750px){
+    /*header*/
+    .header_home{
+        height: 100px;
+    }
+
+    /*BARRAS LATERAIS*/
+    #side-bar1,
+    #side-bar2,
+    #side-bar3,
+    #side-bar4,
+    #side-bar5 {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px){
+    *{
+        transition: .4s;
+    }
+
+    /*login*/
+    #login-modal{
+        height: 570px;
+    }
+    
+    /*header*/
+    .header_home{
+        height: 70px;
+    }
+
+    #menu {
+        gap: 2rem;
+        margin-right: 2rem;
+    }
+
+    #logo_pink {
+        margin-left: 2rem;
+        width: 200px;
+    }
+
+    /*serviços*/
+    #servs {
+        padding-top: 400px;
+    }
+
+    .menu-serv {
+        width: 1100px;
+    }
+
+    /*titulo serviços*/
+    #title-serv {
+        font-size: 35px;
+        margin: 10px 40px;
+    }
+
+    /*serviços btn*/
+    #btns-serv {
+        gap: 20px;
+    }
+
+    .serv {
+        width: 220px;
+        height: 170x;
+    }
+
+    /*APRESENTAÇÃO*/
+    #apresentacao {
+        margin-top: 150px;
+    }
+
+    /*dESCRIÇOES*/
+    #descs{
+        gap: 60px;
+    }
+
+    .desc{
+        width: 300px;
+        height: 300px;
+    }
+
+    .title-desc {
+        font-size: 30px;
+    }
+
+    .text-desc {
+        margin-top: 10px;
+    }
+
+    /*BARRA FUNDO*/
+    #bar1 {
+        height: 100px;
+    }
+
+    #bar2 {
+        height: 50px;
+        box-shadow: 0px 50px 0px 0px var(--rosaClaro);
+    }
+
+    /*ANCHOR*/
+    #spa,
+    #espaco-beleza,
+    #derma,
+    #estetica {
+        height: 50rem;
+    }
+
+    #spa {
+        margin-top: 0;
+    }
+
+    /*CONTEUDO SERVIÇOS*/
+    .content {
+        height: 500px;
+    }
+
+    #img-content{
+        width: 90px;
+        height: 90px;
+    }
+
+    #title-content {
+        font-size: 35px;
+        margin: 30px 110px;
+    }
+
+    .btns-content{
+        gap: 30px;
+        margin: 130px 0;
+    }
+
+    #btn{
+        width: 230px;
+        height: 300px;
+    }
+
+    #display-bottom{
+        height: 90px;
+        width: 101%;
+    }
+
+    #line {
+        width: 200px;
+        height: 60px;
+    }
+
+    #name-serv {
+        font-size: 20px;
+    }
+
+    #hour,
+    #serv-title {
+        font-size: 20px;
+    }
+
+    #serv-list{
+        height: 100px;
+        margin-bottom: 70px;
+        font-size: 13px;
+    }
+
+    /*footer*/
+    #footer-home{
+       height: 30rem;
+    }
+
+    #sobre-nos {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px){
+    /*login*/
+    #container-modal{
+        padding: 100px 30px;
+    }
+
+    #login-modal{
+        width: 300px;
+        height: 400px;
+    }
+
+    #title-login{
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .login-input{
+        margin: 10px;
+    }
+
+    #Entrar{
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }    
 }

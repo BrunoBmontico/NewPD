@@ -40,229 +40,83 @@
 
     <!-- AGENDAMENTO PROCEDIMENTOS -->
     <div id="agendamento-container">
-        <div class="agendamento procedimento">
-            <div class="content">
-                <div class="content-line">
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Spa Simples</p>
-                            <p id="hour">2:00 Horas</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Spa Completo</p>
-                            <p id="hour">2:40 Horas</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Spa Luxo</p>
-                            <p id="hour">3:00 Horas</p>
-                        </div>
-                    </nav>
-                </div>
+        <div id="agendamento">
+            <div id="container-title">
+                <p id="title-agendamento">Agendamento</p>
+            </div>
+            <div id="container-agendamento">
+                <select name="procedimento" class="select procedimento">
+                    <option id="title-select">Qual procedimento deseja escolher?</option>
+                    <option class="proc-option">Spa Simples</option>
+                    <option class="proc-option">Spa Completo</option>
+                    <option class="proc-option">Spa Luxo</option>
+                    <option class="proc-option">Cabeleireiro</option>
+                    <option class="proc-option">Depilação</option>
+                    <option class="proc-option">Manicure</option>
+                    <option class="proc-option">Podologia</option>
+                    <option class="proc-option">Dermapen</option>
+                    <option class="proc-option">Lasers</option>
+                    <option class="proc-option">Peeling Químico</option>
+                    <option class="proc-option">Preenchimento</option>
+                    <option class="proc-option">Corporal</option>
+                    <option class="proc-option">Facial</option>
+                </select>
+            </div>
 
-                <div class="content-line">
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Cabeleireiro</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Depilação</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Manicure</p>
-                        </div>
-                    </nav>
-                </div>
+            <div id="container-agendamento">
+                <select name="profissional" class="select profissional">
+                    <option id="title-select">Qual profissional deseja escolher?</option>
+                    <option class=""></option>
+                </select>
+            </div>
 
-                <div class="content-line">
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Podologia</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Dermapen</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Lasers</p>
-                        </div>
-                    </nav>
-                </div>
+            <div id="container-agendamento">
+                <input type="datetime-local" id="data">
+            </div>
 
-                <div class="content-line">
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Peeling Químico</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Preenchimento</p>
-                        </div>
-                    </nav>
-    
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Colporal</p>
-                        </div>
-                    </nav>
-                </div>
-
-                <div class="content-line">
-                    <nav class="btn-procedimento">
-                        <div class="line">
-                            <p class="name-serv">Facial</p>
-                        </div>
-                    </nav>
-                </div>
+            <div id="container-agendamento">
+                <button id="btn-agendar">Agendar</button>
             </div>
         </div>
-        
-        <div class="agendamento medico-data">
-            <div class="search-container med-search-container">
-                <input type="date" placeholder="Data" class="med-data">
-            </div>
-            <div class="content med">
-                <nav class="btn-medico">
-                    <div class="perfil-medico-container">
-                        <div class="img-medico">
-                            <img src="#">
-                        </div>
-                        <div class="container-espc">
-                            <img src="/CSS/IMG/agendamento_img/spa.svg" id="img-espc">
-                            <p id="desc-med-espc">SPA</p>
-                        </div>
-                    </div>
-                    <div class="horario-container">
-                        <div class="horario">
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
+    </div>
 
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-
-                <nav class="btn-medico">
-                    <div class="perfil-medico-container">
-                        <div class="img-medico">
-                            <img src="#">
-                        </div>
-                        <div class="container-espc">
-                            <img src="/CSS/IMG/agendamento_img/estética.svg" id="img-espc">
-                            <p id="desc-med-espc">Estética</p>
-                        </div>
-                    </div>
-                    <div class="horario-container">
-                        <div class="horario">
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-
-                            <div class="hora-container">
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                                <button class="hora">17:00</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            
-
-        
-
-
-
-    </div> 
-    
     <!-- FOOTER -->
-    <footer id="footer-agendamento">
-        <img src="CSS/IMG/cadastro_img/banner_footer.svg" id="banner-footer">
-        <div id="footer">
-            <div id="sobre-nos">
-                <img src="CSS/IMG/footer_img/logo-footer.svg" id="logo-footer">
-                <p id="sb-text">
-                    Sobre nós:
-                    <br>
-                    <br>
-                    A Pink Diamond Skin Care foi criada para oferecer um ambiente
-                    descontraído e desconexo da agitação da metrópole,
-                    onde você pode relaxar e cuidar da sua pele e bem-estar.
-                </p>
-            </div>
-            <div id="nossas-redes">
-                <p>Nossas Redes:</p>
-                <div id="redes">
-                    <a href="https://www.instagram.com"><img src="CSS/IMG/footer_img/instagram.svg"></a>
-                    <a href="https://twitter.com"><img src="CSS/IMG/footer_img/twitter.svg"></a>
-                    <a href="https://www.facebook.com"><img src="CSS/IMG/footer_img/facebook.svg"></a>
+    <div id="footer-container">
+        <footer id="footer-agendamento">
+            <img src="CSS/IMG/cadastro_img/banner_footer.svg" id="banner-footer">
+            <div id="footer">
+                <div id="sobre-nos">
+                    <img src="CSS/IMG/footer_img/logo-footer.svg" id="logo-footer">
+                    <p id="sb-text">
+                        Sobre nós:
+                        <br>
+                        <br>
+                        A Pink Diamond Skin Care foi criada para oferecer um ambiente
+                        descontraído e desconexo da agitação da metrópole,
+                        onde você pode relaxar e cuidar da sua pele e bem-estar.
+                    </p>
+                </div>
+                <div id="nossas-redes">
+                    <p>Nossas Redes:</p>
+                    <div id="redes">
+                        <a href="https://www.instagram.com"><img src="CSS/IMG/footer_img/instagram.svg"></a>
+                        <a href="https://twitter.com"><img src="CSS/IMG/footer_img/twitter.svg"></a>
+                        <a href="https://www.facebook.com"><img src="CSS/IMG/footer_img/facebook.svg"></a>
+                    </div>
+                </div>
+                <div id="contato">
+                    <ul id="contato-lista">
+                        <p>Contato:</p>
+                        <li>Rua Coelho Lisboa, 538 - Tatuapé, São paulo - Sp</li>
+                        <li>Telefone: 11 2256-4040</li>
+                        <li>E-mail: atendimento@pinkdiamond.com.br</li>
+                        <li>Horário de funcionamento:</li>
+                        <li>Segunda à Sexta das 08:00 às 20:00</li>
+                        <li>Sábados das 08:00 às 18:00 </li>
+                    </ul>
                 </div>
             </div>
-            <div id="contato">
-                <ul id="contato-lista">
-                    <p>Contato:</p>
-                    <li>Rua Coelho Lisboa, 538 - Tatuapé, São paulo - Sp</li>
-                    <li>Telefone: 11 2256-4040</li>
-                    <li>E-mail: atendimento@pinkdiamond.com.br</li>
-                    <li>Horário de funcionamento:</li>
-                    <li>Segunda à Sexta das 08:00 às 20:00</li>
-                    <li>Sábados das 08:00 às 18:00 </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 </body>
 </html>

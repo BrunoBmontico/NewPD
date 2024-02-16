@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb{
 
 /*loader do site*/
 #preloader {
-    background: var(--rosaForte) url(IMG/loader.gif) no-repeat center center;
+    background: var(--rosaForte) url(IMG/homepage_img/loader.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -188,245 +188,97 @@ header {
 /*AGENDAMENTO*/
 #agendamento-container{
     width: 100%;
-    gap: 50px;
-    z-index: 1;
+    height: 400px;
     display: flex;
-    position: absolute;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.agendamento{
-    margin-top: 100px;
-    width: 900px;
-    height: 800px;
+#agendamento{
     background-color: var(--branco);
     border: 3px solid var(--rosaClaro);
     box-shadow: -7px 7px 0px 0px var(--rosaForte);
-
-    display: flex;
-    justify-content: center;
-}
-
-.procedimento,
-.medico-data{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content{
-    width: 700px;
+    position: absolute;
+    margin-top: 100px;
+    width: 500px;
     height: 700px;
-    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/*SCROLL-BAR PROCEDIMENTOS*/
-.content::-webkit-scrollbar{
-    width: 10px;
-}
-
-.content::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-.content::-webkit-scrollbar-thumb{
-    background-color: var(--rosaClaro);
-    border-radius: 30px;
-}
-
-.content-line{
+#container-title{
     width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-}
-
-/*CONTEUDO PROCEDIMENTOS*/
-.btn-procedimento{
-    background-color: var(--rosaMedio);
-    border-radius: 10px;
-    width: 190px;
-    height: 150px;
-    cursor: pointer;
-    margin: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .2s ease-in-out;
-}
-
-.btn-procedimento:hover{
-    box-shadow: -7px 7px 0px 0px var(--rosaForte);
-}
-
-.btn-procedimento-clicado{
-    background-color: var(--rosaForte);
-}
-
-.btn-procedimento-clicado:hover{
-    box-shadow: -7px 7px 0px 0px var(--rosaMedio);
-}
-
-.line{
-    width: 165px;
-    height: 70px;
-    border-top: 2px solid var(--branco);
-    border-bottom: 2px solid var(--branco);
-    color: var(--branco);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.name-serv{
-    font-size: 20px;
-    user-select:none
-}
-
-#hour{
-    user-select: none;
-}
-
-/*CONTEUDO MEDICO E DATA*/
-.med-search-container{
-    gap: 30px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.med-data{
-    width: 300px;
-    height: 40px;
-    border: 3px solid var(--rosaMedio);
-    font-size: 15px;
-    color: #888888;
+#title-agendamento{
+    font-size:  30px;
+    color: var(--roxo);
 }
 
-.med{
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.btn-medico{
-    border: 3px solid var(--rosaMedio);
-    background-color: var(--branco);
-    border-radius: 25px 25px 25px 0;
-    width: 250px;
-    height: 230px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.perfil-medico-container{
-    border-bottom: 3px solid var(--rosaClaro);
-    border-radius: 25px 25px 0 0;
+#container-agendamento{
     width: 100%;
     height: 100px;
-
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    flex-direction: column;   
 }
 
-.img-medico{
-    border: 2px solid var(--rosaMedio);
+.select,
+#data{
+    border: 2px solid var(--rosaEscuro);
+    color: #a1a1a1;
+    outline: none;
+    width: 300px;
+    height: 40px;
     border-radius: 5px;
-    width: 85px;
-    height: 85px;
-}
-
-.container-espc{
-
-    width: 100px;
-    height: 90px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
-#img-espc{
-    width: 80%;
+#title-select{
+    display: none;
 }
 
-#desc-med-espc{
-    color: var(--roxo);
-    font-size: 13px;
+.proc-option{
+    appearance: none;
+    text-align: start;
+    color: #000000;
 }
 
-.horario-container{
+#btn-agendar{
     background-color: var(--rosaMedio);
-    border-radius: 0px 0px 20px 0;
-    width: 100%;
-    height: 130px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.horario{
-    overflow-y: scroll;
-    width: 230px;
-    height: 110px;
-}
-
-.hora-container{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 5px;
-}
-
-.horario::-webkit-scrollbar{
-    width: 10px;
-}
-
-.horario::-webkit-scrollbar-track{
-    background: var(--rosaMedio);
-}
-
-.horario::-webkit-scrollbar-thumb{
-    background-color: var(--rosaClaro);
-    border-radius: 30px;
-    border: 3px solid var(--rosaMedio);
-}
-
-.hora{
-    background-color: transparent;
     color: var(--branco);
-    border: 1px solid var(--branco);
-    border-radius: 10px;
-    width: 70px;
-    height: 35px;
-    font-size: 13px;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
 }
 
-.hora:hover{
-    border: 3px solid var(--branco);
+#btn-agendar:hover{
+    cursor: pointer;
+    box-shadow: -4px 4px 0px 0px var(--rosaForte);
+    transition: all .2s ease-in-out;
 }
 
 /*FOOTER*/
+#footer-container{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 #footer-agendamento {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 40rem;
 }
 
 #footer {
@@ -436,7 +288,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
 }
 
 #sobre-nos,
@@ -494,7 +345,7 @@ header {
 }
 
 /*RESPONSIVIDADE*/
-@media (max-width: 1366px){
+@media (max-width: 1400px){
     *{
         transition: .4s;
     }
@@ -506,7 +357,7 @@ header {
     
     /*header*/
     #menu {
-        gap: 3rem;
+        gap: 2rem;
         margin-right: 2rem;
     }
 
@@ -514,38 +365,38 @@ header {
         margin-left: 2rem;
         width: 200px;
     }
-    
-    /*agendamento procedimentos*/
-    .agendamento{
-        width: 800px;
-        height: 700px;
-    }
-
-    .search-proc{
-        width: 500px;
-    }
-
-    .content{
-        width: 700px;
-        height: 500px;
-    }
-
-    /*agendamento medico*/
-    .btn-medico{
-        width: 250px;
-        height: 230px;
-    }
-
-    .med{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 250px;
-    }
 
     /*footer*/
     #sobre-nos {
         display: none;
     }
 
+}
+
+@media (max-width: 1300px){
+    /*login*/
+    #container-modal{
+        padding: 100px 30px;
+    }
+
+    #login-modal{
+        width: 300px;
+        height: 400px;
+    }
+
+    #title-login{
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .login-input{
+        margin: 10px;
+    }
+
+    #Entrar{
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }    
 }

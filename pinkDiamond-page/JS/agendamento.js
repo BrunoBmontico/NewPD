@@ -1,7 +1,7 @@
 const login = document.getElementById('open-login');
 const modal = document.getElementById('login-modal');
 const loader = document.getElementById('preloader');
-const btnsProcedimento = document.querySelectorAll('.btn-procedimento');
+
 
 
 /*load do site*/
@@ -18,11 +18,4 @@ login.addEventListener('click', function(){
         modal.classList.remove('open-modal');
         modal.classList.add('closed-modal');
     }
-});
-
-/*checkbox para escolher procedimento*/
-Array.prototype.forEach.call(btnsProcedimento, function(btn){
-    btn.addEventListener('click', function(){
-        btn.classList.toggle('btn-procedimento-clicado');
-    });
 });
